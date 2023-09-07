@@ -1,0 +1,264 @@
+/* =================================================================== 
+Common
+=================================================================== */
+
+
+*{
+    font-family: 'NotoSansKR';
+}
+
+
+
+
+
+/* =================================================================== 
+Header
+=================================================================== */
+
+.nav_borderbar{
+    background: #F2F2F2;
+}
+
+.nav_container{
+  max-width: 768px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 7px 0 7px;
+
+}
+
+.nav_container ul li a{
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.5px;
+  color: #828282;
+}
+
+.left_nav{
+    display: flex;
+}
+
+.left_nav li:not(:last-child){
+    margin-right: 20px;
+}
+
+.right_nav{
+    display: flex;
+}
+
+.right_nav li:not(:last-child){
+    margin-right: 20px;
+}
+
+.header_borderbar{
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.header_container {
+    padding: 25px 0 ;
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company_logo {
+    vertical-align: top;
+}
+
+.header_searching {
+    position: relative;
+    width: 397px;
+    border-radius: 12px;
+    border: none;
+}
+
+.header_searching input {
+    width: 100%;
+    padding: 10px 12px;
+    background: #F2F2F2;
+    border-radius: 100px;
+    border: none;
+    padding-left: 42px; 
+}
+
+.dotbogi {
+    position: absolute;
+    width: 18px;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 10px;
+}
+
+.header_use {
+    display: flex;
+
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header_use img{
+    vertical-align: top;
+    margin-bottom: 4px;
+    height: 24px;
+}
+
+.header_use  [class^='use']:not(:last-child){
+    margin-right: 15px;
+}
+
+.header_use [class^='use']{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =================================================================== 
+footer 
+=================================================================== */
+
+/*footer*/
+.footer_silver_wrap {
+    background: #F2F2F2;
+    padding-bottom: 100px;
+ }
+ 
+ .company_information {
+     padding-top: 98px;
+     display: flex;
+     justify-content: space-between;
+     max-width: 768px;
+     margin: 0 auto;
+ }
+ 
+ .company_information .account {
+     display: flex;
+     flex-direction: column;
+     white-space: nowrap;
+ }
+ 
+ .company_information .account span:first-child{
+     color:  #333;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: -0.5px;
+     padding-bottom: 14px;
+ }
+ 
+ .company_information .account span:last-child{
+     padding-top: 30px;
+ }
+ 
+ .company_information .account span:not(:first-child){
+     color: #828282;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     letter-spacing: -0.5px;
+ }
+ 
+ .company_information .call {
+     display: flex;
+     flex-direction: column; 
+     white-space: nowrap;
+ }
+ 
+ .company_information .call span:first-child{
+     color:  #333;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: -0.5px;
+     padding-bottom: 14px;
+ }
+ 
+ .company_information .call span:not(:first-child){
+     color: #828282;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 180%; /* 21.6px */
+     letter-spacing: -0.5px;
+ }
+ 
+ .company_information .ceo {
+     display: flex;
+     flex-direction: column; 
+     white-space: nowrap;
+ }
+ 
+ .company_information .ceo span:first-child{
+     color:  #333;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: -0.5px;
+     padding-bottom: 14px;
+ }
+ 
+ .company_information .ceo span:not(:first-child){
+     color: #828282;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 180%; /* 21.6px */
+     letter-spacing: -0.5px;
+ }
+ 
+ .footer_under {
+     display: flex;
+     justify-content: space-between;
+     max-width: 768px;
+     margin: 0 auto;
+     padding: 10px 0 36px;
+        border-bottom: 1px solid #BDBDBD;
+ }
+ 
+ .footer_under ul{
+     display: flex;
+ }
+ 
+ .footer_under .term{
+     color: #828282;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 180%; /* 21.6px */
+     letter-spacing: -0.5px;
+ }
+ 
+ .footer_under .term::after{
+     display: inline-block;
+     content: "";
+     height: 10px;
+     width: 1px;
+     margin: 0px 5px 0px;
+     background: #828282;
+ }
+ 
+ 
+ .footer_under .personal_information{
+     color: #4F4F4F;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: normal;
+     letter-spacing: -0.5px;
+     margin-right: 125px;
+ }
+ 
+ 
