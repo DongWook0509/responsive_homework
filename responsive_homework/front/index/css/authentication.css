@@ -8,6 +8,7 @@
 }
 
 .password_title {
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
@@ -147,4 +148,164 @@
     line-height: normal;
     border-radius: 10px;
     border: none;
+}
+
+@media screen and (max-width:768px) { 
+    .password_wrap {
+        padding: 40px 0 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    
+    .password_title {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .certified_form > span {
+        display: block;
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 14px;
+    }
+    
+    .password_title span:first-child {
+        color: #000;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        padding-bottom: 4px;
+    }
+    
+    .password_title span:not(:first-child, :last-child){
+        color: #828282;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.5px;
+    }
+    
+    .password_title span:last-child {
+        color: #444;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        padding : 30px 0 40px
+    }
+
+    .authentication_form {
+        width: 100%;
+    }
+    
+    .authentication_form > span {
+        color:  #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    } 
+    
+    .authentication_compartment {
+        width: 100%;
+        display: flex;
+        margin: 10px 0 10px;
+    }
+    
+    .authentication_compartment .authentication_input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 12px;
+        width: 70%;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid  #BDBDBD;
+    }
+    
+    .authentication_compartment .authentication_button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 50px;
+        border-radius: 10px;
+        background: #BDBDBD;
+        border: none;
+    
+        color: #FFFFFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    
+        margin-left: 10px;
+    }
+    
+    .authentication_check .authentication_notice {
+        color: #BDBDBD;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .authentication_check .authenticatio_back{
+        color:  #2D9CDB;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+        margin-left: 10px;
+    }
+    
+    .authenticatio_step {
+        padding-top: 84px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .authenticatio_step .next_step{
+        background: #56CCF2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48%;
+        height: 50px;
+    
+        color:  #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border: none;
+    }
+    
+    .authenticatio_step .prev_step{
+        background: #E0E0E0;;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48%;
+        height: 50px;
+    
+        color: #828282;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border: none;
+    }
 }

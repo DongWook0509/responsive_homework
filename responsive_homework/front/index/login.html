@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../common/css/font.css">
     <link rel="stylesheet" href="../../common/css/common.css">
 
-    <link rel="stylesheet" href="./css/authentication.css">
+    <link rel="stylesheet" href="./css/login.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
@@ -19,16 +19,15 @@
     <div id = "main_container">
         <header class="header_wrap">
             <!--mobile container-->
-            <div class="mobile_header">
-                <img src="../../common/image/moblie_group_logo.svg" alt="moblie_group_logo" class="moblie_group_logo">
-                    <div class="mobile_hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <div class="mobile_header">
+                    <img src="../../common/image/moblie_group_logo.svg" alt="moblie_group_logo" class="moblie_group_logo">
+                        <div class="mobile_hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                </div>
-            <div>
-            <div>
+                <div>
                 <div class="nav_borderbar">
                     <nav class="nav_container">
                         <ul class="left_nav">
@@ -71,28 +70,22 @@
             </div>
         </header>
         <div class="body_wrap">
-            <div class="password_wrap">
-                <div class="password_title">
-                    <span>본인인증</span>
-                    <span>My Page</span>
-                    <span>인증수단 선택</span>
+           <div class="login_container">
+                <div class="login_header">
+                    <span>로그인</span>
+                    <span>Welcome</span>
                 </div>
-                <div class="authentication_form">
-                  <span>수신된 SMS의 인증번호를  입력해 주세요</span>
-                  <div class="authentication_compartment">
-                    <input type="text" placeholder="인증번호를 입력해주세요" class="authentication_input">
-                    <button class="authentication_button">인증</button>
-                  </div>
-                  <div class="authentication_check">
-                    <span class="authentication_notice">인증번호가 도착하지 않았나요?</span>
-                    <span class="authenticatio_back">인증번호 다시받기</span>
-                  </div>
-                  <div class="authenticatio_step">
-                    <button class="next_step">확인</button>
-                    <button class="prev_step">이전</button>
-                  </div>
+                <div class="login_form">
+                    <span class="id_title">아이디(이메일)</span>
+                    <input type="text" placeholder="아이디를 입력하세요." class="id_input">
+                    <span class="pass_title">비밀번호</span>
+                    <input type="text" placeholder="비밀번호를 입력하세요.">
                 </div>
-            </div> <!--password_wrap-->
+                <div class="login_btn_wrap">
+                    <button class="login_btn">로그인</button>
+                    <button class="join_btn">회원가입</button>
+                </div>
+           </div>
         </div> <!--body_wrap-->
         <footer>
             <div class="footer_silver_wrap">

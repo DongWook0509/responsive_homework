@@ -15,6 +15,10 @@ Common
 Header
 =================================================================== */
 
+.mobile_header {
+    display: none;
+}
+
 .nav_borderbar{
     background: #F2F2F2;
 }
@@ -121,6 +125,47 @@ Header
     align-items: center;
 }
 
+@media screen and (max-width:768px) {
+
+    .mobile_header {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        padding: 15px 0 15px;
+    }
+
+    .mobile_header .mobile_hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mobile_header .mobile_hamburger > span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 100px;
+        background: #444;
+    }
+
+    .mobile_header .mobile_hamburger span:not(:last-child){
+        margin-bottom: 5px;
+    }
+
+    .nav_borderbar{
+        display: none;
+    }
+
+    .header_container{
+        display: none;
+    }
+
+    .header_borderbar {
+        border: none;
+    }
+}
+
 
 /* =================================================================== 
 footer 
@@ -225,7 +270,7 @@ footer
      max-width: 768px;
      margin: 0 auto;
      padding: 10px 0 36px;
-        border-bottom: 1px solid #BDBDBD;
+    border-bottom: 1px solid #BDBDBD;
  }
  
  .footer_under ul{
@@ -261,4 +306,143 @@ footer
      margin-right: 125px;
  }
  
- 
+ @media screen and (max-width:768px) {
+    
+    .footer_silver_wrap {
+        background: #F2F2F2;
+        padding-bottom: 20px;
+     }
+     
+     .company_information {
+         padding-top: 50px;
+         display: flex;
+         flex-direction: column;
+         max-width: 80%;
+         margin: 0 auto;
+     }
+     
+     .company_information .account {
+         display: flex;
+         flex-direction: column;
+         white-space: nowrap;
+     }
+     
+     .company_information .account span:first-child{
+         color:  #333;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: normal;
+         letter-spacing: -0.5px;
+         padding-bottom: 14px;
+     }
+     
+     .company_information .account span:last-child{
+         padding-top: 20px;
+         padding-bottom: 35px;
+     }
+     
+     .company_information .account span:not(:first-child){
+         color: #828282;
+         font-size: 12px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+         letter-spacing: -0.5px;
+     }
+     
+     .company_information .call {
+         display: flex;
+         flex-direction: column; 
+         white-space: nowrap;
+     }
+     
+     .company_information .call span:first-child{
+         color:  #333;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: normal;
+         letter-spacing: -0.5px;
+         padding-bottom: 14px;
+     }
+     
+     .company_information .call span:not(:first-child){
+         color: #828282;
+         font-size: 12px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 180%; /* 21.6px */
+         letter-spacing: -0.5px;
+     }
+     
+     .company_information .ceo {
+         display: flex;
+         flex-direction: column; 
+         white-space: nowrap;
+     }
+     
+     .company_information .ceo span:first-child{
+        padding-top: 30px;
+         color:  #333;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: normal;
+         letter-spacing: -0.5px;
+         padding-bottom: 14px;
+     }
+     
+     .company_information .ceo span:not(:first-child){
+         color: #828282;
+         font-size: 12px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 180%; /* 21.6px */
+         letter-spacing: -0.5px;
+     }
+     
+     .footer_under {
+         display: flex;
+         justify-content: space-between;
+         width: 90%;
+         margin: 0 auto;
+         margin-top: 80px;
+         padding: 20px 0 0;
+         border-top: 1px solid #BDBDBD;
+         border-bottom: 0;
+     }
+     
+     .footer_under ul{
+         display: flex;
+     }
+     
+     .footer_under .term{
+         color: #828282;
+         font-size: 12px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 180%; /* 21.6px */
+         letter-spacing: -0.5px;
+     }
+     
+     .footer_under .term::after{
+         display: inline-block;
+         content: "";
+         height: 10px;
+         width: 1px;
+         margin: 0px 5px 0px;
+         background: #828282;
+     }
+     
+     
+     .footer_under .personal_information{
+         color: #4F4F4F;
+         font-size: 12px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: normal;
+         letter-spacing: -0.5px;
+         margin-right: 0
+     }
+ }
