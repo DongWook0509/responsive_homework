@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../common/css/font.css">
     <link rel="stylesheet" href="../../common/css/common.css">
 
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/join.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 
@@ -70,23 +70,46 @@
             </div>
         </header>
         <div class="body_wrap">                                                                                                                                                                                
-           <div class="login_container">
-                <div class="login_header">
-                    <span>로그인</span>
+           <div class="join_wrap">
+                <div class="join_title">
+                    <span>회원가입</span>
                     <span>Welcome</span>
                 </div>
-                <div class="login_form">
+                <div class=id_form>
                     <span class="id_title">아이디(이메일)</span>
-                    <input type="text" placeholder="아이디를 입력하세요." class="id_input">
-                    <span class="pass_title">비밀번호</span>
-                    <input type="text" placeholder="비밀번호를 입력하세요." class="pw_input"> 
-                    <span class="password_search">비밀번호 찾기</span>
+                    <input type="text" placeholder="아이디(이메일)을 입력하세요." class="id_input">
+                    <span class="nick">닉네임</span>
+                    <input type="text" placeholder="닉네임을 입력하세요." class="nick_input">
                 </div>
-                <div class="login_btn_wrap">
-                    <button class="login_btn">로그인</button>
-                    <button class="join_btn">회원가입</button>
+                <div class="auth_form">
+                    <span class="auth_title">이름</span>
+                    <input type="text" placeholder="이름을 입력하세요">
+                    <div class="tell_form">
+                        <div class="tell_title">
+                            <span>휴대폰 번호</span>
+                            <span>*상품권 거래는 실명인증을 완료후 이용가능합니다.</span>
+                        </div>
+                        <div class="phone_input">
+                            <input type="text" placeholder="휴대폰를 입력하세요.">
+                            <button class="phone_btn">인증</button>
+                        </div>
+                        <div class="code_input">
+                            <input type="text" placeholder="인증번호를 입력하세요.">
+                            <button class="code_btn">확인</button>
+                        </div>
+                    </div>
                 </div>
-           </div>
+                <div class="password_form">
+                    <div class="password_title">
+                        <span>비밀번호</span>
+                        <span>*대/소문자,숫자,특수문자 중 2가지 이상 조합하세요</span>
+                    </div>
+                    <input type="text" placeholder="비밀번호를 입력하세요" class="pwd_input">
+                    <span class="confrim_password">비밀번호 확인</span>
+                    <input type="text" placeholder="비밀번호 한번 더 입력하세요." class="confrim_password_check">
+                    <button class="password_complate">완료</button>
+                </div>
+           </div> <!--join_wrap-->
         </div> <!--body_wrap-->
         <footer>
             <div class="footer_silver_wrap">
