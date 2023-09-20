@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../../common/css/reset.css">
+    <link rel="stylesheet" href="../../common/css/font.css">
+    <link rel="stylesheet" href="../../common/css/common.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <div id = "main_container">
+        <header class="header_wrap">
+            <!--mobile container-->
+            <div class="mobile_header">
+                <img src="../../common/image/moblie_group_logo.svg" alt="moblie_group_logo" class="moblie_group_logo">
+                <div class="mobile_hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="nav_borderbar">
+                    <nav class="nav_container">
+                        <ul class="left_nav">
+                            <li><a href="#">상품권 매장</a></li>
+                            <li><a href="#">창업문의</a></li>
+                        </ul>
+                        <ul class="right_nav">
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">궁금한점이있으세요?</a></li>
+                        </ul>
+                    </nav> <!--nav_container-->
+                </div> <!--nav_borderbar-->
+                <div class="header_borderbar">
+                    <div class="header_container">
+                        <a href="#">
+                            <img src="../../common/image/img_logo_large.png" alt="company_logo" class="company_logo">
+                        </a>
+                        <div class="header_searching">
+                            <img src="../../common/image/dotbogi.svg" alt="dotbogi" class="dotbogi">
+                            <input type="text" placeholder="검색어를 입력해주세요">
+                        </div>
+                        <div class="header_use">
+                            <div class="use_instructions">
+                                <img src="../../common/image/yiyong.svg" alt="icon_yiyong" class="yiyong">
+                                <span>이용방법</span>
+                            </div>
+                            <div class="use_mypage">
+                                <img src="../../common/image/icon_my.svg" alt="icon_my" class="icon_my">
+                                <span>마이</span>
+                            </div>
+                            <div class="use_center">
+                                <img src="../../common/image/icon_center.png" alt="icon_center" class="icon_center">
+                                <span>고객센터</span>
+                            </div>
+                        </div> <!--header_use-->
+                    </div><!--header_container-->
+                </div><!--header_borderbar-->
+            </div>
+        </header>
+        <div class="body_wrap">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide bg1"><img src="../../common/image/bg1_slider.png" alt="bg1_slider" class="bg1_slider"></div>
+                    <div class="swiper-slide bg2"><img src="../../common/image/bg2_slider.png" alt="bg2_slider" class="bg2_slider"></div>
+                    <div class="swiper-slide bg3"><img src="../../common/image/bg3_slider.png" alt="bg3_slider" class="bg3_slider"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper_btn_wrapper">
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div class="sangpum_wrap">
+                <div class="sangpum_box">
+                    <a href="#">
+                        <div class="sangpum_circle">
+                            <img src="../../common/image/department_icon.png" alt="department_logo" class="department_logo">
+                        </div>
+                        <span class="sangpum_title">백화점</span>
+                    </a>
+                </div>
+                <div class="sangpum_box">
+                    <div class="sangpum_circle">
+                        <img src="../../common/image/halin_logo.png" alt="halin_logo" class="halin_logo">
+                    </div>
+                    <span class="sangpum_title">할인마트</span>
+                </div>
+                <div class="sangpum_box">
+                    <div class="sangpum_circle">
+                        <img src="../../common/image/juyu_logo.png" alt="juyu_logo" class="juyu_logo">
+                    </div>
+                    <span class="sangpum_title">할인마트</span>
+                </div>
+                <div class="sangpum_box">
+                    <div class="sangpum_circle">
+                        <img src="../../common/image/gudu_logo.png" alt="gudu_logo" class="gudu_logo">
+                    </div>
+                    <span class="sangpum_title">재화</span>
+                </div>
+                <div class="sangpum_box">
+                    <div class="sangpum_circle">
+                        <img src="../../common/image/book_logo.png" alt="book_logo" class="book_logo">
+                    </div>
+                    <span class="sangpum_title">도서문화</span>
+                </div>
+                <div class="sangpum_box">
+                    <div class="sangpum_circle">
+                        <img src="../../common/image/trip_logo.png" alt="trip_logo" class="trip_logo">
+                    </div>
+                    <span class="sangpum_title">관광</span>
+                </div>
+                <div class="sangpum_box">
+                    <div class="sangpum_circle">
+                        <img src="../../common/image/moving_logo.png" alt="moving_logo" class="moving_logo">
+                    </div>
+                    <span class="sangpum_title">영화</span>
+                </div>
+                <div class="sangpum_box">
+                    <div class="sangpum_circle">
+                        <img src="../../common/image/food_logo.png" alt="food_logo" class="food_logo">
+                    </div>
+                    <span class="sangpum_title">음식</span>
+                </div>
+            </div>
+
+            <div class="sangpum_price_wrap">
+                <div class="sangpum_title_wrap">
+                    <div class="sangpum_left">
+                        <div class="sangpum_live">
+                            <span>LIVE</span>
+                        </div>
+                        <span class="sangpum_left_title">오늘의 상품권 시세</span>
+                    </div>
+                    <div class="sangpum_right">
+                        <a href="#">전체보기
+                            <img src="../../common/image/right_arrow.svg" alt="right_arrow" class="right_arrow">
+                        </a>
+                    </div>
+                </div>
+                <span class="sangpum_content">상품권 사실 때, 파실 때 최고 시세를 보상드릴게요!</span>
+                <!--tab menu 구현-->
+                <div class="tabs">
+                    <button class="tab-button active" data-tab="tab1">현대백화점</button>
+                    <button class="tab-button" data-tab="tab2">갤러리아</button>
+                    <button class="tab-button" data-tab="tab3">롯데백화점</button>
+                    <button class="tab-button" data-tab="tab4">신세계백화점</button>
+                </div>
+                <div class="tab-content" id="tab1">
+                    <table class="price_table">
+                        <tr class="price_table_header">
+                            <td>상품권 이름</td>
+                            <td>액면가</td>
+                            <td>파실 때</td>
+                            <td>사실 때</td>
+                        </tr>
+                        <tr class="price_table_one">
+                            <td class="black_point">현대백화점 50만원 권</td>
+                            <td class="black_point">500.000원</td>
+                            <td class="red_point">[5%]475.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]487.500원</td>
+                        </tr>
+                        <tr class="price_table_two">
+                            <td class="black_point">현대백화점 40만원 권</td>
+                            <td class="black_point">400.000원</td>
+                            <td class="red_point">[5%]375.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]487.500원</td>
+                        </tr>
+                        <tr class="price_table_three">
+                            <td class="black_point">현대백화점 30만원 권</td>
+                            <td class="black_point">300.000원</td>
+                            <td class="red_point">[5%]275.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]487.500원</td>
+                        </tr>
+                        <tr class="price_table_four">
+                            <td class="black_point">현대백화점 10만원 권</td>
+                            <td class="black_point">100.000원</td>
+                            <td class="red_point">[5%]97.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]97.000원</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-content" id="tab2">
+                    <table class="price_table">
+                        <tr class="price_table_header">
+                            <td>상품권 이름</td>
+                            <td>액면가</td>
+                            <td>파실 때</td>
+                            <td>사실 때</td>
+                        </tr>
+                        <tr class="price_table_one">
+                            <td class="black_point">갤러리아 50만원 권</td>
+                            <td class="black_point">500.000원</td>
+                            <td class="red_point">[5%]475.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]487.500원</td>
+                        </tr>
+                        <tr class="price_table_two">
+                            <td class="black_point">갤러리아 40만원 권</td>
+                            <td class="black_point">400.000원</td>
+                            <td class="red_point">[5%]375.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]487.500원</td>
+                        </tr>
+                        <tr class="price_table_three">
+                            <td class="black_point">갤러리아 30만원 권</td>
+                            <td class="black_point">300.000원</td>
+                            <td class="red_point">[5%]275.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]487.500원</td>
+                        </tr>
+                        <tr class="price_table_four">
+                            <td class="black_point">갤러리아 10만원 권</td>
+                            <td class="black_point">100.000원</td>
+                            <td class="red_point">[5%]97.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]97.000원</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-content" id="tab3">
+                    <table class="price_table">
+                        <tr class="price_table_header">
+                            <td>상품권 이름</td>
+                            <td>액면가</td>
+                            <td>파실 때</td>
+                            <td>사실 때</td>
+                        </tr>
+                        <tr class="price_table_one">
+                            <td class="black_point">롯데백화점 50만원 권</td>
+                            <td class="black_point">500.000원</td>
+                            <td class="red_point">[5%]475.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]487.500원</td>
+                        </tr>
+                        <tr class="price_table_two">
+                            <td class="black_point">롯데백화점 40만원 권</td>
+                            <td class="black_point">400.000원</td>
+                            <td class="red_point">[5%]375.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]487.500원</td>
+                        </tr>
+                        <tr class="price_table_three">
+                            <td class="black_point">롯데백화점 30만원 권</td>
+                            <td class="black_point">300.000원</td>
+                            <td class="red_point">[5%]275.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]487.500원</td>
+                        </tr>
+                        <tr class="price_table_four">
+                            <td class="black_point">롯데백화점 10만원 권</td>
+                            <td class="black_point">100.000원</td>
+                            <td class="red_point">[5%]97.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]97.000원</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-content" id="tab4">
+                    <table class="price_table">
+                        <tr class="price_table_header">
+                            <td>상품권 이름</td>
+                            <td>액면가</td>
+                            <td>파실 때</td>
+                            <td>사실 때</td>
+                        </tr>
+                        <tr class="price_table_one">
+                            <td class="black_point">신세계백화점 50만원 권</td>
+                            <td class="black_point">500.000원</td>
+                            <td class="red_point">[5%]475.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]487.500원</td>
+                        </tr>
+                        <tr class="price_table_two">
+                            <td class="black_point">신세계백화점 40만원 권</td>
+                            <td class="black_point">400.000원</td>
+                            <td class="red_point">[5%]375.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]487.500원</td>
+                        </tr>
+                        <tr class="price_table_three">
+                            <td class="black_point">신세계백화점 30만원 권</td>
+                            <td class="black_point">300.000원</td>
+                            <td class="red_point">[5%]275.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]487.500원</td>
+                        </tr>
+                        <tr class="price_table_four">
+                            <td class="black_point">신세계백화점 10만원 권</td>
+                            <td class="black_point">100.000원</td>
+                            <td class="red_point">[5%]97.000원</td>
+                            <td class="blue_point">[2.5% - 3.0%]97.000원</td>
+                        </tr>
+                    </table>
+                </div>
+            </div> <!--sangpum_price_wrap-->
+
+            <div class="voucher_wrap">
+                <div class="merchandise_wrap">
+                    <span class="merchandise_left"><span class="pin_point">👉</span> 상품권 종류</span>
+                    <div class="merchandise_right">
+                        <a href="#">
+                            <span>전체보기</span>
+                            <img src="../../common/image/blue_right_icon.png" alt="blue_right" class="blue_right">
+                        </a>
+                    </div>
+                </div>
+                <div class="custom-tabs">
+                    <button class="custom-tab-button active" data-tab="custom-tab1">현대백화점</button>
+                    <button class="custom-tab-button" data-tab="custom-tab2">갤러리아</button>
+                    <button class="custom-tab-button" data-tab="custom-tab3">롯데백화점</button>
+                    <button class="custom-tab-button" data-tab="custom-tab4">신세계백화점</button>
+                </div>
+                <div class="custom-tab-content" id="custom-tab1">
+                    <div class="cultural_wrap">
+                        <div class="cultural_box">
+                            <img src="../../common/image/hd_01.png" alt="hd_01" class="hd_01">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                        <div class="cultural_box">
+                            <img src="../../common/image/hd_02.png" alt="hd_02" class="hd_02">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                        <div class="cultural_box">  
+                            <img src="../../common/image/hd_03.png" alt="hd_03" class="hd_03">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                        <div class="cultural_box">
+                            <img src="../../common/image/bongtu.jpg" alt="bongtu" class="bongtu">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-tab-content" id="custom-tab2">
+                    <div class="cultural_wrap">
+                        <div class="cultural_box">
+                            <img src="../../common/image/gel_01.png" alt="gel_01" class="gel_01">
+                            <span class="cultural_title">갤러리아 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                        <div class="cultural_box">
+                            <img src="../../common/image/gel_02.png" alt="gel_02" class="gel_02">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                        <div class="cultural_box">  
+                            <img src="../../common/image/gel_03.png" alt="gel_03" class="gel_03">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                        <div class="cultural_box">
+                            <img src="../../common/image/bongtu.jpg" alt="bongtu" class="bongtu">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-tab-content" id="custom-tab3">
+                    <div class="cultural_wrap">
+                        <div class="cultural_box">
+                            <img src="../../common/image/lotte_01.png" alt="lotte_01" class="lotte_01">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                        <div class="cultural_box">
+                            <img src="../../common/image/lotte_02.png" alt="lotte_02" class="lotte_02">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                        <div class="cultural_box">  
+                            <img src="../../common/image/lotte_03.png" alt="lotte_03" class="lotte_03">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                        <div class="cultural_box">
+                            <img src="../../common/image/bongtu.jpg" alt="bongtu" class="bongtu">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-tab-content" id="custom-tab4">
+                    <div class="cultural_wrap">
+                        <div class="cultural_box">
+                            <img src="../../common/image/ssg_01.jpg" alt="ssg_01" class="ssg_01">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                        <div class="cultural_box">
+                            <img src="../../common/image/ssg_02.jpg" alt="ssg_02" class="ssg_02">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                        <div class="cultural_box">  
+                            <img src="../../common/image/ssg_03.jpg" alt="ssg_03" class="ssg_03">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                        <div class="cultural_box">
+                            <img src="../../common/image/bongtu.jpg" alt="bongtu" class="bongtu">
+                            <span class="cultural_title">현대백화점 50만원권</span>
+                            <span class="cultural_butitle">484,000원</span>
+                        </div>
+                </div>
+            </div>
+            </div> <!--voucher_wrap-->
+            
+            <div class="middle_blue_wrap">
+                <div class="middle_blue_content">
+                    <span>상품권, 왜 한국상품권거래소에서 거래해야 할까요?</span>
+                    <a href="#" class="service_searching">
+                        서비스 보기
+                    </a>
+                </div>
+            </div> <!--middle_blue_wrap-->
+
+            <div class="purchase_gift_wrap">
+                <div class="purchase_title">
+                    <div class="purchase_left">
+                        <i>👀</i>
+                        <span>5초만에 확인하는 상품권 구매</span>
+                    </div>
+                    <div class="purchase_right">
+                        <span>상품권 구매하러가기</span>
+                        <img src="../../common/image/right_arrow.svg" alt="right_arrow" class="right_arrow">
+                    </div>
+                </div>
+
+                <div class="voucher_basket">
+                    <div class="voucher_want">
+                        <img src="../../common/image/vouchar_left.png" alt="vouchar_left" class="vouchar_left">
+                        <img src="../../common/image/vouchar_right.png" alt="vouchar_right" class="vouchar_right">
+                    </div>
+                </div>
+                <img src="../../common/image/blue_under.svg" alt="blue_under" class="blue_under">
+
+                <div class="voucher_basket">
+                    <div class="voucher_want">
+                        <img src="../../common/image/vouchar_left2.png" alt="vouchar_left2" class="vouchar_left2">
+                        <img src="../../common/image/vouchar_right2_img.png" alt="vouchar_right2" class="vouchar_right2">
+                    </div>
+                </div>
+                <img src="../../common/image/blue_under.svg" alt="blue_under" class="blue_under">
+                
+                <div class="voucher_basket">
+                    <div class="voucher_want">
+                        <img src="../../common/image/vouchar_left3.png" alt="vouchar_left3" class="vouchar_left3">
+                        <img src="../../common/image/vouchar_right3.png" alt="vouchar_right3" class="vouchar_right3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="purchase_buy_wrap">
+                <div class="purchase_buy_title">
+                    <div class="purchase_buy_left">
+                        <i>👛</i>
+                        <span>5초만에 확인하는 상품권 구매</span>
+                    </div>
+                    <div class="purchase_buy_right">
+                        <span>상품권 구매하러가기</span>
+                        <img src="../../common/image/right_arrow.svg" alt="right_arrow" class="right_arrow">
+                    </div>
+                </div>
+
+                <div class="voucher_buy_basket">
+                    <div class="voucher_buy_want">
+                        <img src="../../common/image/vouchar_buy_left.png" alt="vouchar_left" class="vouchar_left">
+                        <img src="../../common/image/vouchar_right.png" alt="vouchar_right" class="vouchar_right">
+                    </div>
+                </div>
+                <img src="../../common/image/blue_under.svg" alt="blue_under" class="blue_under">
+
+                <div class="voucher_buy_basket">
+                    <div class="voucher_buy_want">
+                        <img src="../../common/image/vouchar_buy_left2.png" alt="vouchar_left2" class="vouchar_left2">
+                        <img src="../../common/image/vouchar_right2_img.png" alt="vouchar_right2" class="vouchar_right2">
+                    </div>
+                </div>
+                <img src="../../common/image/blue_under.svg" alt="blue_under" class="blue_under">
+                
+                <div class="voucher_buy_basket">
+                    <div class="voucher_buy_want">
+                        <img src="../../common/image/vouchar_buy_left3.png" alt="vouchar_left3" class="vouchar_left3">
+                        <img src="../../common/image/vouchar_buy_right3.png" alt="vouchar_buy_right3" class="vouchar_buy_right3">
+                    </div>
+                </div>
+
+                <div class="call_information">
+                    <div class="call_title_wrap">
+                        <i>📢 고객센터</i>
+                        <span>한국상품권거래소는 고객님의 편안한 거래를 위해 최선을 다하겠습니다.</span>
+                    </div>
+                    <div class="call_content">
+                        <div class="call_left">
+                            <span>02-6949-6749</span>
+                            <span>영업시간 : (평일)10:00 ~ 18:00</span>
+                        </div>
+                        <div class="call_right">
+                            <div>
+                                <span>예금주</span>
+                                <span>한국상품권거래소 주식회사</span>
+                            </div>
+                            <div>
+                                <span>우리은행</span>
+                                <span>1005-603-665492</span>
+                            </div>
+                            <div>
+                                <span>이메일</span>
+                                <span>firebete@naver.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--call_information-->
+                 
+            </div>
+        </div> <!--body_wrap-->
+        <footer>
+            <div class="footer_silver_wrap">
+                <div class="company_information">
+                    <div class="account">
+                        <span>계좌번호 안내</span>
+                        <span>예금주 : 한국상품권거래소 주식회사</span>
+                        <span>우리은행 : 1005-603-665492</span>
+                        <span>(현재 현금거래만 가능합니다)</span>
+                    </div>
+                    <div class="call">
+                        <span>고객센터</span>
+                        <span>전화문의 : 02-6949-6749</span>
+                        <span>이메일 : firebete@naver.com</span>
+                        <span>영업시간 : (평일)10:00 ~ 18:00</span>
+                    </div>
+                    <div class="ceo">
+                        <span>한국상품권거래소</span>
+                        <span>(주) 한국상품권거래소 | 사업자 등록번호 : 238-81-01302</span>
+                        <span>통신판매업신고번호 : 0000-서울성동-0000</span>
+                        <span>대표 : 박세진 | 개인정보 관리 책임자</span>
+                        <span>서울시 동작구 양녕로 265 3층</span>
+                    </div>
+                </div>
+                <div class="footer_under">
+                    <img src="../../common/image/img_logo_small.png" alt="img_logo_small" class="img_logo_small">
+                    <ul>
+                        <li><a href="#" class="term">이용약관</a></li>
+                        <li><a href="#" class="personal_information">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+
+    <script src="../../front/index/js/main.js"> </script>
+</body>
+</html>
