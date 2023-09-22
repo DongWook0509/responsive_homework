@@ -409,6 +409,7 @@ table {
 
 .service_searching {
     
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -479,7 +480,41 @@ table {
     max-width: 90%;
 }
 
-.vouchar_left {
+.voucher_want.one{
+    position: relative;
+}
+
+.voucher_want.one .vouchar_left {
+    position: absolute;
+    left: 0;
+    width: 245px;
+}
+
+
+.voucher_want.one .vouchar_right{
+    position: absolute;
+    top : 0;
+    right: 0;
+}
+
+.voucher_buy_want.four {
+    position: relative;
+}
+
+.voucher_buy_want.four .vouchar_left {
+    position: absolute;
+    left: 0;
+    width: 245px;
+}
+
+
+.voucher_buy_want.four .vouchar_right{
+    position: absolute;
+    top : 0;
+    right: 0;
+}
+
+.vouchar_left{
     width: 245px;
 }
 
@@ -740,22 +775,26 @@ table {
         flex-direction: column;
         align-items: center;
     }
+
+    .sangpum_box:nth-child(n+5) {
+        margin-top: 24px;
+    }
+
         
     .sangpum_box span{
         display: block;
         color:  #828282;
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        letter-spacing: -0.5px;
+        letter-spacing: -0.442px;
     }
-    
     
     .sangpum_price_wrap {
         margin: 0 auto;
-        max-width: 768px;
+        max-width: 90%;
     }
     
     .sangpum_title_wrap {
@@ -770,7 +809,7 @@ table {
     .sangpum_left_title {
         padding-left: 10px;
         color:  #000;
-        font-size: 20px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -800,13 +839,13 @@ table {
         justify-content: center;
         align-items: center;
         
-        width: 56px;
-        height: 30px;
+        width: 50px;
+        height: 24px;
         border-radius: 100px;
         background: #FFD34B;
         
         color: #000;
-        font-size: 13px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -814,9 +853,9 @@ table {
     
     .sangpum_content {
         display: block;
-        margin: 4px 0 16px 8px;
-        color:  #828282;
-        font-size: 14px;
+        margin: 4px 0 16px 0px;
+        color: #828282;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -838,7 +877,7 @@ table {
         height: 54px;
     
         color: #BDBDBD;
-        font-size: 16px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -850,7 +889,7 @@ table {
         background: #F2F2F2;
         color : #000;
         text-align: center;
-        font-size: 16px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -887,14 +926,14 @@ table {
     }
     
     .price_table td{
-        padding: 18px 0;
+        padding: 15px 0;
         width: 25%;
     }
     
     .price_table .black_point {
         color: #000;
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -904,7 +943,7 @@ table {
     .price_table .red_point {
         color: #DC4148;
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -914,7 +953,7 @@ table {
     .price_table .blue_point{
         color: #0887C9;
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -927,7 +966,7 @@ table {
     
     
     .voucher_wrap {
-        max-width: 768px;
+        max-width: 90%;
         margin: 0 auto;
     }
     
@@ -947,7 +986,7 @@ table {
         height: 54px;
     
         color: #BDBDBD;
-        font-size: 16px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -959,7 +998,7 @@ table {
         background: #F2F2F2;
         color : #000;
         text-align: center;
-        font-size: 16px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -968,18 +1007,23 @@ table {
     
     .cultural_wrap {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
     }
     
     .cultural_box {
+        width: 48%;
         display: flex;
         flex-direction: column;
     }
+
+    .cultural_box:nth-child(n+3) {
+        margin-top: 24px;
+    }
     
     .cultural_box .cultural_title {
-        padding: 12px 0;
+        padding: 8px 0 2px;
         color: #000;
-        font-size: 14px;
+        font-size: 13px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -988,7 +1032,7 @@ table {
     
     .cultural_box .cultural_butitle{
         color: #000;
-        font-size: 14px;
+        font-size: 13px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1004,7 +1048,7 @@ table {
     
     .merchandise_wrap .merchandise_left {
         color: #000;
-        font-size: 20px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1083,7 +1127,7 @@ table {
     
     .purchase_gift_wrap {
         margin: 0 auto;
-        max-width: 768px;
+        max-width: 80%;
     }
     
     .purchase_title {
@@ -1095,7 +1139,7 @@ table {
     
     .purchase_left > span {
         color: #000;
-        font-size: 20px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1129,18 +1173,80 @@ table {
         margin: 0 auto;
         max-width: 90%;
     }
+
+    .voucher_want{
+        position: relative;
+    }
+    
+    .voucher_want.one .vouchar_left {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        width: 190px;
+    }
+    
+    
+    .voucher_want.one .vouchar_right{
+        width: 95px;
+        height: 85px;
+        position: absolute;
+        top : 0;
+        right: 0;
+    }
+    
+    .voucher_buy_want.four {
+        position: relative;
+    }
+    
+    .voucher_buy_want.four .vouchar_left {
+        position: absolute;
+        left: 0;
+        width: 190px;
+    }
+    
+    .voucher_buy_want.four .vouchar_right{
+        width: 95px;
+        height: 85px;
+        position: absolute;
+        top : 0;
+        right: 0;
+    }
     
     .vouchar_left {
-        width: 245px;
+        width: 190px;
     }
-    
+
     .vouchar_left2 {
-        width: 213px;
+        z-index: 1;
+        width: 160px;
     }
-    
-    
+
     .vouchar_left3 {
-        width: 188px;
+        z-index: 1;
+        width: 140px;
+    }
+
+    .vouchar_right2 {
+        position: absolute;
+        right: 0;
+        width: 100px;
+        height: 60px;
+    }
+
+    .vouchar_right3 {
+        position: absolute;
+        right: 0;
+        width: 115px;
+        height: 98px;
+        bottom: 0;
+    }
+
+    .vouchar_buy_right3 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 131px;
+        height: 93px;
     }
     
     .blue_under {
@@ -1152,7 +1258,7 @@ table {
     
     .purchase_buy_wrap {
         margin: 0 auto;
-        max-width: 768px;
+        max-width: 80%;
     }
     
     .purchase_buy_title {
@@ -1164,7 +1270,7 @@ table {
     
     .purchase_buy_left > span {
         color: #000;
-        font-size: 20px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1190,6 +1296,7 @@ table {
     }
     
     .voucher_buy_want {
+        position: relative;
         height: 160px;
         margin: 0 auto;
         max-width: 90%;
@@ -1210,12 +1317,13 @@ table {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
     
     .call_title_wrap i {
+        white-space: nowrap;
         color: #000;
-        font-size: 20px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1225,7 +1333,7 @@ table {
     
     .call_title_wrap > span {
         color: #828282;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -1234,18 +1342,21 @@ table {
     
     .call_content{
         display: flex;
+        flex-direction: column;
     }
     
     .call_left {
+        margin: 20px 0 20px;
         display: flex;
-        flex-direction: column;
-        padding-right: 40px;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
         border-right: 1px solid #EAEAEA;
     }
     
     .call_left span:first-child{
         color: #2D9CDB;
-        font-size: 24px;
+        font-size: 22px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -1254,7 +1365,7 @@ table {
     
     .call_left span:last-child{
         color: #444;
-        font-size: 13px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -1262,7 +1373,10 @@ table {
     }
     
     .call_right {
-        padding-left: 40px;
+        padding-left: 0px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
     
     .call_right > div {
@@ -1273,7 +1387,7 @@ table {
         display: block;
         width: 50px;
         color: #444;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 180%; /* 25.2px */
@@ -1283,7 +1397,7 @@ table {
     
     .call_right > div > span:last-child{
         color: #222;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 700;
         line-height: 180%; /* 25.2px */
